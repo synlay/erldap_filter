@@ -1,0 +1,15 @@
+%% -*- mode: erlang -*-
+{application, erldap_filter,
+ [
+  {description, "the erldap_filter project"},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  %% uncomment if this is an active application
+  %% {mod, { erldap_filter_app, []}},
+  {env, []}
+ ]}.
+%% vim: set filetype=erlang tabstop=2
