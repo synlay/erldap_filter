@@ -1,7 +1,8 @@
 language: erlang
 notifications:
   hipchat:
-    - secure: "kTli2lyPoRjPOn1Ku39Oa+Mv2Tf/0gOei2mJkZfdHdZpcGH1nzoKmUe1Nhwk\nkzMB2XmgwF6PHm3nKpMuU72V6aWDoTEUASIgyqLRsZmqMWBs8pg3BvPg0NbR\nlm7tx4AVLq7CyESJV6XWqdhTAsQnNBCybBnbrtaWtV8jmUI2/HQ="
+    rooms:
+      secure: RbtwL2/xaEqwbWXYpaPyngptdi4X4fwQwLFutraV8bVAYZMU6OhtL1dT1JiLeh5WTlto9jgktXrmoAqSISmCibimH0aXc42j93B4UJ22rJTQB2pMFCCGoVGnkkbvypmsKeB1VDLZKt0GUe5UTiMUB2o96Ish9gZayNI4Cm7YjTY=
 otp_release:
    - 17.1
    - 17.0
@@ -15,4 +16,4 @@ otp_release:
    - R14B04
    - R14B03
    - R14B02
-script: "make rebuild"
+script: make rebuild
