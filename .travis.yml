@@ -1,4 +1,7 @@
 language: erlang
+notifications:
+  hipchat:
+    - secure: "kTli2lyPoRjPOn1Ku39Oa+Mv2Tf/0gOei2mJkZfdHdZpcGH1nzoKmUe1Nhwk\nkzMB2XmgwF6PHm3nKpMuU72V6aWDoTEUASIgyqLRsZmqMWBs8pg3BvPg0NbR\nlm7tx4AVLq7CyESJV6XWqdhTAsQnNBCybBnbrtaWtV8jmUI2/HQ="
 otp_release:
    - 17.1
    - 17.0
