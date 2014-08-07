@@ -1,0 +1,8 @@
+ebin/*
+*.beam
+deps/*
+rel/erldap_filter
+.concrete/DEV_MODE
+deps.plt
+.eunit
+.rebar
