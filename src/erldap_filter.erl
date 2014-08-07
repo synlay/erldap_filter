@@ -1,6 +1,9 @@
 -module(erldap_filter).
 
--export([hello/0]).
+-export([
+    parse/1
+]).
 
-hello() ->
-    howdy.
+parse(StringInput) ->
+    {ok, Tokens, _EndLine} = erldap_filter_lexer:string(StringInput),
+    erldap_filter_parser:parse(Tokens).

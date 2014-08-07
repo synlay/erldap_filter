@@ -6,3 +6,7 @@ rel/erldap_filter
 deps.plt
 .eunit
 .rebar
+.idea
+*.iml
+src/erldap_filter_lexer.erl
+src/erldap_filter_parser.erl

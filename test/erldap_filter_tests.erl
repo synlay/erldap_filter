@@ -14,7 +14,6 @@ erldap_filter_test_() ->
       {"erldap_filter is alive",
        fun() ->
                %% format is always: expected, actual
-               ?assertEqual(howdy, erldap_filter:hello())
+               ?assertMatch({ok, _}, erldap_filter:parse("(!(&(a)(b)(ccc)))"))
        end}
       ]}.
-

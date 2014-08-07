@@ -120,7 +120,7 @@ clean:
 allclean:
 	@($(REBARC) --help 2>&1|grep -q recursive && $(REBARC) -r clean) || $(REBARC) clean
 
-compile: $(DEPS)
+compile: $(PRECOMPILE_HOOK) $(DEPS)
 	@$(REBARC) compile
 
 $(DEPS):
