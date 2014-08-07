@@ -9,3 +9,5 @@ PARSER_NAME=$(PARSER_BASE_NAME)_parser
 create_parser_files:
 	@$(ERL_FOR_PARSER) 'leex:file("$(SRC_DIR)/$(LEXER_NAME)"), halt().'
 	@$(ERL_FOR_PARSER) 'yecc:file("$(SRC_DIR)/$(PARSER_NAME)"), halt().'
+
+rebuild: distclean all_but_dialyzer
